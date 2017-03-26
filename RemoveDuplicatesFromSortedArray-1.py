@@ -16,6 +16,6 @@ class Solution(object):
         return newTail + 1
 
 if __name__ == '__main__':
-    nums = [1, 1, 2, 2, 3]
+    nums = []
     a = Solution()
     print(a.removeDuplicates(nums))
