@@ -31,14 +31,15 @@ class Solution(object):
             end += 1
             count_dict[i] = count_dict.get(i, 0) + 1
             while count_dict[i] > 1:
+
+                count_dict[s[start]] -= 1
                 start += 1
-                count_dict[i] -= 1
             max_count = max(max_count,(end - start))
         return max_count
 
 
 if __name__ == '__main__':
-    s = 'abcaa'
+    s = 'pwwkew'
     s1 = 'aaaaa'
     solution = Solution()
-    print(solution.lengthOfLongestSubstring(s1))
+    print(solution.lengthOfLongestSubstring(s))
