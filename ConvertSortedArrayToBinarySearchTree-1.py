@@ -1,3 +1,15 @@
+"""
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+
+题意：
+如何将有序数列转化为平衡二叉树
+
+解法：
+递归解法
+先取中间值为根结点，左边为左分支，右边为右分支，然后再递归找每个分支的跟结点
+"""
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
