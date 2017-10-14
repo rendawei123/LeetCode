@@ -1,3 +1,7 @@
+"""
+采用普通递归的方法，但是这种方法，如果递归很多层，效率很低，时间复杂度很高
+"""
+
 class Solution(object):
     def climbStairs(self, n):
         """

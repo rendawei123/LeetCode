@@ -39,6 +39,6 @@ class Solution(object):
         return ways[n-1]
 
 if __name__ == '__main__':
-    n = 5
+    n = 3
     s = Solution()
     print(s.climbStairs(n))
