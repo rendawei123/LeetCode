@@ -1,3 +1,12 @@
+"""
+最大价格差
+跟解法1y一样，只是这个是简单解法
+"""
+
+
+
+
+
 class Solution(object):
     def maxProfit(self, prices):
         """
