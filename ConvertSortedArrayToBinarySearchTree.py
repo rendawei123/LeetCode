@@ -1,3 +1,16 @@
+"""
+Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+
+二叉查找树：
+左子树的值小于根节点的值，根节点的值小于右子树的值
+
+解法：
+采用递归解法，从中间取值，由于本来就是按照顺序排列，左边自然就是左子树，右边是右子树
+"""
+
+
+
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -29,4 +42,3 @@ class Solution(object):
         root.right = self.sortedArrayToBST(right_nums)
 
         return root
-
