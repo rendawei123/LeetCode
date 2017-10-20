@@ -1,3 +1,13 @@
+"""
+Write a function to find the longest common prefix string amongst an array of strings.
+
+题意：
+求所有字符串的最长公共前缀，即数组的所有字符串都包含这个前缀。
+普通循环遍历做法
+"""
+
+
+
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """
@@ -35,5 +45,3 @@ if __name__ == '__main__':
     #strs = []
     a = Solution()
     print(a.longestCommonPrefix(strs))
-
-
