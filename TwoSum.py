@@ -1,6 +1,10 @@
-# Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-# You may assume that each input would have exactly one solution, and you may not use the same element twice.
-# 题目要求：给出一个整数数组nums，和一个数target,假设数组里面有且只有两个数的和为target，求这两个数在数组中的索引,要求不能重复使用一个元素
+"""
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+题目要求：
+给出一个整数数组nums，和一个数target,假设数组里面有且只有两个数的和为target，求这两个数在数组中的索引,要求不能重复使用一个元素
+"""
 
 
 class Solution(object):

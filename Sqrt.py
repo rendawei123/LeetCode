@@ -1,3 +1,12 @@
+"""
+Implement int sqrt(int x).
+
+Compute and return the square root of x.
+
+实现函数int sqrt(int x)
+"""
+
+
 class Solution(object):
     def mySqrt(self, x):
         """
