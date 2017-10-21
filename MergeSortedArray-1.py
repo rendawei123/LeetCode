@@ -38,6 +38,22 @@ class Solution(object):
 
         return nums1
 
+    def merge1(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: void Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[m:] = []
+        nums2[n:] = []
+        nums1.extend(nums2)
+        nums1.sort()
+        return nums1
+
+
+
 if __name__ == '__main__':
 
     # nums1有足够空间容纳nums1和nums2

@@ -44,6 +44,20 @@ class Solution(object):
 
         return max_profit
 
+
+    #  简单解法
+    def maxProfit1(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        most_profit = 0
+
+        for i in range(len(prices) - 1):
+            most_profit += max(prices[i + 1] - prices[i], 0)
+
+        return most_profit
+
 if __name__ == '__main__':
     b = []
     c = [5, 3, 1]

@@ -38,6 +38,47 @@ class Solution(object):
             result += each
         return result
 
+    def maxSubArray1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums:
+            return 0
+
+        max_sum = cur_sum = nums[0]
+
+        for each in nums[1:]:
+            cur_sum = max(each, cur_sum + each)
+            max_sum = max(max_sum, cur_sum)
+
+        return max_sum
+
+    def maxSubArray2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if nums == []:
+            return 0
+        else:
+            result = nums[0]
+
+            for i in range(1, len(nums) + 1):
+
+                for j in range(len(nums)-i+1):
+
+                    if self.sum(nums[j:j+i]) > result:
+                        result = self.sum(nums[j:j+i])
+
+            return result
+
+    def sum2(self, number_list):
+        result = 0
+        for each in number_list:
+            result += each
+        return result
+
 if __name__ == '__main__':
     l1 = [1, -10, 3, 4, 5]
     l2 = [-1, -2, 5, 3]

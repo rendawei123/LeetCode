@@ -38,6 +38,19 @@ class Solution(object):
 
         return ways[n-1]
 
+    # 这种方法思路简单，但是递归效率太差
+    def climbStairs1(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+        return self.climbStairs(n-1) + self.climbStairs(n-2)
+
+
 if __name__ == '__main__':
     n = 3
     s = Solution()

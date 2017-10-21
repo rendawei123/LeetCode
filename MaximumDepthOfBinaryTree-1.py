@@ -36,3 +36,13 @@ class Solution(object):
         :rtype: int
         """
         return 1 + max(map(self.maxDepth, (root.left, root.right))) if root else 0
+
+    def maxDepth1(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root:
+            return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+        else:
+            return 0
